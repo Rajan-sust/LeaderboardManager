@@ -1,2 +1,2 @@
-# SUSTIPC-alpha-
+# SUSTIPCalpha
 Alpha version
