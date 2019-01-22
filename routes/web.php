@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//defining Admin features url
+
+
+Route::get('/home/add/contest','AddContestController@show');
+Route::post('/home/add/contest','AddContestController@systemCall');
+
+

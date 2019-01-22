@@ -7,27 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        .nav-collapse {
-            margin-left: 2px;
-        }
-        #myInput {
-            background-image: url("https://www.w3schools.com/howto/searchicon.png");
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            width: 100%;
-            font-size: 16px;
-            padding: 12px 20px 12px 40px;
-            border: 2px solid #ddd;
-            margin-bottom: 12px;
 
+    <style type="text/css">
+
+        .nav-collapse {
+            margin-left: 1px;
         }
-        .corner {
-            border-radius: 5px;
-            padding: 35px;
-            box-shadow: 0px 0px 10px;
-            text-align: center;
-        }
+
+        @yield('style')
+
 
     </style>
 </head>
@@ -42,8 +30,8 @@
                     <a class="navbar-brand" href="/home">SUST IPC Rank</a>
                 </div>
 
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Add Contest</a></li>
+                <ul class="nav navbar-nav nav-collapse">
+                    <li class="active"><a href="/home/add/contest">Add Contest</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
@@ -96,4 +84,8 @@
     </div>
     <div class="col-md-1"></div>
 </div>
+
+@section('content')
+@show
+
 </body>
