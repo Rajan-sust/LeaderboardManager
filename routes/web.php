@@ -19,12 +19,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
-//defining Admin features url
-
-
+// Admin : Add Contest
 Route::get('/home/add/contest','AddContestController@show');
 Route::post('/home/add/contest','AddContestController@systemCall');
+
+//Admin : Set Point
+Route::get('/home/set/point/contests','SetPointController@show');
+Route::get('/home/set/point/{id}','SetPointController@setPoint');
+Route::post('/home/set/point/submit','SetPointController@receivePoint');
 
 

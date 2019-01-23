@@ -35,7 +35,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
-                    <li class="active"><a href="#">Set Point</a></li>
+                    <li class="active"><a href="/home/set/point/contests">Set Point</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">

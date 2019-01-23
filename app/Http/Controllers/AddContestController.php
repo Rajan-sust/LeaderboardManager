@@ -10,10 +10,15 @@ class AddContestController extends Controller {
 
     public function show() {
 
+        If(Auth::check() == false){
+            return redirect('/');
+        }
+
         if(Auth::user()->admin == true){
             return view('admin/addcontest');
 
         }
+
         return abort(401);
     }
 
