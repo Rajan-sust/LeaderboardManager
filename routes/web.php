@@ -31,4 +31,4 @@ Route::post('/home/set/point/submit','SetPointController@receivePoint');
 
 //Admin : permit admin
 Route::get('/home/permit/admin','PermitAdminController@show');
-
+Route::post('/home/permit/admin/confirm','PermitAdminController@makeAdmin');

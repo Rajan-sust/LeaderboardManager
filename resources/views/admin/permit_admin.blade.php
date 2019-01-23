@@ -27,16 +27,40 @@
                 </div>
                 <div class="modal-body" style="font-style: italic;font-weight: bold;">
                     Do you really want to make him admin?<br><br>
-                    <form method="post">
+                    <form method="post" action="/home/permit/admin/confirm">
                         @csrf
-                        <input type="hidden" id="formId" value="">
+                        <input type="hidden" id="formId" name="mail" value="">
 
-                        <button type="button" class="btn btn-success">confirm</button>
+                        <button type="submit" class="btn btn-success">confirm</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="afterAdmin" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: bold;"><i>notification</i></h4>
+                </div>
+                <div class="modal-body" style="font-style: italic;font-weight: bold;">
+                    Added as a admin.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if(session()->has('message'))
+        <script>
+            $('#afterAdmin').modal('show');
+        </script>
+    @endif
 
 
 
@@ -58,6 +82,7 @@
                     <tbody>
                     @php
                         $users = DB::table('users')->select('name','email')->where('admin',false)->distinct()->orderby('name')->get();
+
 
                     @endphp
                     @foreach($users as $user)
