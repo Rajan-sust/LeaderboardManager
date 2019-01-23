@@ -21,7 +21,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title"><i>notification</i></h4>
+                    <h4 class="modal-title" style="font-weight: bold;"><i>notification</i></h4>
                 </div>
                 <div class="modal-body" style="font-style: italic;font-weight: bold;">
 

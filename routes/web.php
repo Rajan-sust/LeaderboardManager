@@ -29,3 +29,6 @@ Route::get('/home/set/point/{id}','SetPointController@setPoint');
 Route::post('/home/set/point/submit','SetPointController@receivePoint');
 
 
+//Admin : permit admin
+Route::get('/home/permit/admin','PermitAdminController@show');
+

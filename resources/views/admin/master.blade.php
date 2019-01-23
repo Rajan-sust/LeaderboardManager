@@ -46,7 +46,7 @@
                     <li class="active"><a href="#">Publish Rank</a></li>
                 </ul>
                 <ul class="nav navbar-nav nav-collapse">
-                    <li class="active"><a href="#">Permit Admin</a></li>
+                    <li class="active"><a href="/home/permit/admin">Permit Admin</a></li>
                 </ul>
 
 
