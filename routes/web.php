@@ -36,3 +36,7 @@ Route::post('/home/permit/admin/confirm','PermitAdminController@makeAdmin');
 //Admin : experiment merge
 Route::get('/home/merge/experiment','MergeController@show');
 Route::post('/home/merge/experiment','MergeController@receive');
+
+//Admin : publish Rank
+Route::get('/home/merge/publish','PublishController@show');
+Route::post('/home/merge/publish','PublishController@publish');

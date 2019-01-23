@@ -16,7 +16,7 @@
 @section('content')
     @php
 
-        $checked_contest= json_decode( json_encode($checked_contest), true);
+
 
 
         $contestants = DB::table('ranklists')

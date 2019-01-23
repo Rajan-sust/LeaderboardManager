@@ -45,7 +45,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
-                    <li class="active"><a href="#">Publish Rank</a></li>
+                    <li class="active"><a href="/home/merge/publish">Publish Rank</a></li>
                 </ul>
                 <ul class="nav navbar-nav nav-collapse">
                     <li class="active"><a href="/home/permit/admin">Permit Admin</a></li>
