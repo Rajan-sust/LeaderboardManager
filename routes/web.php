@@ -32,3 +32,7 @@ Route::post('/home/set/point/submit','SetPointController@receivePoint');
 //Admin : permit admin
 Route::get('/home/permit/admin','PermitAdminController@show');
 Route::post('/home/permit/admin/confirm','PermitAdminController@makeAdmin');
+
+//Admin : experiment merge
+Route::get('/home/merge/experiment','MergeController@show');
+Route::post('/home/merge/experiment','MergeController@receive');

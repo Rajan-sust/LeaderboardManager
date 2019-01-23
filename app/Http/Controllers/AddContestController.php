@@ -17,9 +17,10 @@ class AddContestController extends Controller {
         if(Auth::user()->admin == true){
             return view('admin/addcontest');
 
+        }else{
+            return abort(401);
         }
 
-        return abort(401);
     }
 
     public function systemCall() {

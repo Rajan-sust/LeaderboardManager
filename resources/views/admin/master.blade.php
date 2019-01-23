@@ -21,6 +21,8 @@
 </head>
 <body>
 
+
+
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
@@ -39,7 +41,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
-                    <li class="active"><a href="#">Experimental Merge</a></li>
+                    <li class="active"><a href="/home/merge/experiment">Experimental Merge</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
