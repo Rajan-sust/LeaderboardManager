@@ -47,3 +47,6 @@ Route::get('/home/merged/rank','UserMergeController@show');
 
 //User : Problem Archive
 Route::get('/home/archive/problem','ProblemArchController@show');
+
+//user : Single contest
+Route::get('/home/single/contest/{id}','SingleContestController@show');
