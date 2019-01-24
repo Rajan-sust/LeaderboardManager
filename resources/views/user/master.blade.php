@@ -31,7 +31,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
-                    <li class="active"><a href="#">Problem Archive</a></li>
+                    <li class="active"><a href="/home/archive/problem">Problem Archive</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">

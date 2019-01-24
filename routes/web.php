@@ -44,3 +44,6 @@ Route::post('/home/merge/publish','PublishController@publish');
 
 //User : Merged Rank
 Route::get('/home/merged/rank','UserMergeController@show');
+
+//User : Problem Archive
+Route::get('/home/archive/problem','ProblemArchController@show');
