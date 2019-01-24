@@ -50,3 +50,6 @@ Route::get('/home/archive/problem','ProblemArchController@show');
 
 //user : Single contest
 Route::get('/home/single/contest/{id}','SingleContestController@show');
+
+//user : Contest Archive
+Route::get('/home/archive/contest','ContestArchController@show');

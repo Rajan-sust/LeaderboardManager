@@ -35,7 +35,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav nav-collapse">
-                    <li class="active"><a href="#">Contest Archive</a></li>
+                    <li class="active"><a href="/home/archive/contest">Contest Archive</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
