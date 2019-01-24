@@ -40,3 +40,7 @@ Route::post('/home/merge/experiment','MergeController@receive');
 //Admin : publish Rank
 Route::get('/home/merge/publish','PublishController@show');
 Route::post('/home/merge/publish','PublishController@publish');
+
+
+//User : Merged Rank
+Route::get('/home/merged/rank','UserMergeController@show');

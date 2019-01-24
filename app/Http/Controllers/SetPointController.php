@@ -50,10 +50,11 @@ class SetPointController extends Controller {
     public function receivePoint() {
 
         $points = $_POST['weight'];
+
         $contest_id = $_POST['id'];
 
 
-        $contestants = DB::table('ranklists')->select('username','solved_mask')->distinct()->get();
+        $contestants = DB::table('ranklists')->select('username','solved_mask')->where('contest_id',$contest_id)->distinct()->get();
 
 
 
@@ -76,6 +77,7 @@ class SetPointController extends Controller {
                 ->where('contest_id',$contest_id)
                 ->where('username',$contestant->username)
                 ->update(['score' => $obtain_points]);
+
 
         }
 
