@@ -14,8 +14,8 @@ form_headers = {
 }
 
 login_data = {
-    'username': 'RAJAN',
-    'password': '133502'
+    'username': '',
+    'password': ''
 }
 
 def login(s):
